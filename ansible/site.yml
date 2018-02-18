@@ -1,0 +1,5 @@
+---
+- hosts: ansible.client
+  roles: 
+   - apache
+#   - ntp  
