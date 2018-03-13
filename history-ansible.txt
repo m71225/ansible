@@ -1,0 +1,1003 @@
+  239  find /etc  -type   d
+  240  clear
+  241  ls
+  242  cat /etc/sysconfig/network
+  243  vi  /etc/sysconfig/network
+  244  systemctl reload network.service
+  245  systemctl restart network.service
+  246  ssh localhost 
+  247  ssh localhost -ldemo
+  248  clear
+  249  mtr
+  250  yum install mtr
+  251  pstree
+  252  yum install pstree
+  253  curl ifconfig.me
+  254  curl 
+  255  curl peshal.pro
+  256  curl ifconfig
+  257  curl ifconfig.me
+  258  ss
+  259  man ss
+  260  ss -l
+  261  nl
+  262  man nl
+  263  nl /etc/passwd
+  264  last
+  265  ls
+  266  python -m SimpleHTTPServer
+  267  clear
+  268  curl ifconfig.me
+  269  tracepath -n google.com
+  270  clear
+  271  ls
+  272   ls -l
+  273  history 
+  274  ls
+  275   ll
+  276  history 
+  277  claer
+  278  pv
+  279  mount | column -t
+  280  yum screeen
+  281  yum screen
+  282  screen
+  283  yum install screen
+  284  screen ls 
+  285  screen 
+  286  clear
+  287  ifconfig 
+  288  ifconfig  -a
+  289  vi /etc/sysconfig/network-scripts/ifcfg-enp0sjj
+  290  ifconfig  -a
+  291  vi /etc/sysconfig/network-scripts/ifcfg-enp0s8
+  292  hostnamectl set-hostname puppet-master
+  293  vi /etc/hosts
+  294  reboot
+  295  clear
+  296  ls
+  297  clear
+  298  vi /etc/hosts
+  299  clear
+  300  ls
+  301  getenforce 
+  302  clear
+  303  ls
+  304  clear
+  305  ls
+  306  poweroff
+  307  clear
+  308  ls
+  309  id puppet
+  310  id puppetmaster
+  311  yum install https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
+  312  clear
+  313  pwd
+  314  su -
+  315  p
+  316  clear
+  317  yum install puppet-master
+  318  yum update
+  319  yum install puppet-master
+  320  yum install puppetmaster
+  321  yum search puppet
+  322  yum install puppetserver
+  323  clear
+  324  poweroff
+  325  pwd
+  326  clear
+  327  yum install puppetmaster
+  328  yum install puppetserver
+  329  clear
+  330  ls
+  331  pwd
+  332  cd /home/
+  333  ls
+  334  mkdir puppetmaster
+  335  cd puppetmaster/
+  336  ls
+  337  pwd
+  338  clear
+  339  ls
+  340  cp /etc/puppet/puppet.conf  /etc/puppet/puppet.conf.orig
+  341  vim /etc/puppet/puppet.conf
+  342  yum install vim -y
+  343  sudo -u puppet puppet master --no-daemonize --verbose
+  344  ps -ef |grep puppet
+  345  sudo -u puppet puppet master --no-daemonize --verbose &
+  346  jobs
+  347  clear
+  348  ls
+  349  systemctl status puppetmaster
+  350  systemctl status puppetserver
+  351  systemctl start  puppetserver
+  352  journamctl -xe
+  353  journalctl -xe
+  354  systemctl status  puppetserver.service
+  355  systemctl start  puppetserver.service
+  356  clear
+  357  puppet cert list
+  358  vi /etc/puppet/puppet.conf
+  359  clear
+  360  puppet cert list
+  361  ping puppetmaster
+  362  ping puppet-master
+  363  vi /etc/hosts
+  364  ping puppetmaster
+  365  clear
+  366  ping puppetmaster
+  367  puppet cert list
+  368  vi /etc/puppet/puppet.conf
+  369  puppet cert list
+  370  vi /etc/puppet/puppet.conf
+  371  puppet cert list
+  372  clear
+  373  puppet cert list
+  374  ping puppet-node-01
+  375  cat /etc/hosts
+  376  ping puppet-node-1
+  377  vim  /etc/hosts
+  378  ping puppet-node-01
+  379  clear
+  380  vim /etc/puppet/puppet.conf
+  381  job
+  382  jobs
+  383   kill %1
+  384  clear
+  385  ljobs
+  386  systemctl start puppetmaster.service
+  387  systemctl start puppetserver.service
+  388  clear
+  389  systemctl status puppetserver.service
+  390  systemctl restart puppetserver.service
+  391  sudo -u puppet puppet master --no-daemonize --verbose &
+  392  ping puppet-node-01
+  393  netstat -an| grep 8140
+  394  clear
+  395  ps -ef  |grep puppet
+  396  kill 15347
+  397  ps -ef  |grep puppet
+  398  clear
+  399  ps -ef  |grep puppet
+  400  kill -9  15347
+  401  kill  154410
+  402  clear
+  403  ls
+  404  netstat -an| grep 8140
+  405  systemctl  stop puppetserver.service
+  406  systemctl  status puppetserver.service
+  407  systemctl  start puppetserver.service
+  408  systemctl  status puppetserver.service
+  409  clear
+  410  netstat -an| grep 8140
+  411  ps -ef |grep puppet
+  412  lsof 
+  413  lsof  -u root
+  414  lsof  -u root |grep puppet
+  415  reboot
+  416  clear
+  417  ls
+  418  w
+  419  cd /home/
+  420  ls
+  421  cd puppetmaster/
+  422  ls
+  423  clear
+  424  w
+  425  ls -l
+  426  netstat -an| grep 8140
+  427  ls -l /var/lib/puppet/ssl/ca/
+  428  ls -l /var/lib/puppet/ssl/ca/signed/
+  429  ls -l /var/lib/puppet/ssl/ca/requests/
+  430  ls -l /var/lib/puppet/ssl/ca/private/
+  431  systemctl status puppetmaster.service
+  432  systemctl status puppetserver.service
+  433  systemctl start puppetserver.service
+  434  history |grep puppet
+  435  sudo -u puppet puppet master --no-daemonize --verbose &
+  436  clear
+  437  puppet cert list
+  438  yum install ntp
+  439  sudo ntpdate pool.ntp.org
+  440  sudo rm -rf /var/lib/puppet/ssl
+  441  ls -l /var/lib/puppet/
+  442  ls -l /var/lib/puppet/ssl
+  443  sudo puppet master --verbose --no-daemonize
+  444  ls -l /var/lib/puppet/ssl
+  445  clear
+  446  ls -l /var/lib/puppet/ssl
+  447  netstat -antp |grep 8140
+  448  ping puppet-node-01
+  449  ping puppetserver
+  450  cat /etc/hosts
+  451  vim  /etc/hosts
+  452  ping puppetserver
+  453  clear
+  454  l
+  455  clear
+  456  cat /etc/hosts
+  457  clear
+  458  ls
+  459  clear
+  460  ls
+  461  wd
+  462  history |grep pup
+  463  sudo puppet master --verbose --no-daemonize
+  464  cd /var/lib/puppet/
+  465  ls
+  466  cd ssl/
+  467  ls
+  468  ls -ltr
+  469  clear
+  470  ls
+  471  ls -l
+  472  ls -ltr
+  473  tree
+  474  yum install pstree
+  475  yum install tree
+  476  tree
+  477  ls 
+  478  pwd
+  479  cd ..
+  480  rm -rf ssl/
+  481  ls
+  482  cear
+  483  ls
+  484  clear
+  485  history 
+  486  clear
+  487  ls
+  488  hostname
+  489  hostnamectl set-hostname puppetserver
+  490  reboot
+  491  clear
+  492  ls
+  493  history |grep pup
+  494  sudo -u puppet puppet master --no-daemonize --verbose &
+  495  cat /etc/hosts
+  496  clear
+  497  ls
+  498  history 
+  499  cd /var/lib/puppet/
+  500  ls
+  501  clear
+  502  ls -ltr
+  503  pwd
+  504  vi /etc/puppet/puppet.conf
+  505  ls -ltr
+  506  puppet cert sign -
+  507  puppet cert sign -a
+  508  ls
+  509   puppet cert clean *
+  510   puppet cert clean puppet-node-01
+  511   puppet cert clean puppet-node-1
+  512  facter 
+  513  facter  |more
+  514  vi /etc/puppet/puppet.conf
+  515   puppet cert clean puppet-node-1
+  516  vi /etc/puppet/puppet.conf
+  517  history |grep pup
+  518  sudo -u puppet puppet master --no-daemonize --verbose &
+  519  reboot
+  520  clear
+  521  ls
+  522  netstat -antp 
+  523  exit
+  524  df -h
+  525  poweroff
+  526  clear
+  527  cd /etc/puppet/
+  528  ls
+  529  clear
+  530  pwd
+  531  ll
+  532  cd manifests/
+  533  ls
+  534  vi site.pp 
+  535  iptables -nvL
+  536  clear
+  537  getenforce 
+  538  systemctl status pupet
+  539  systemctl status puppetserver
+  540  systemctl status puppetmaster
+  541  systemctl stop  puppetmaster
+  542  systemctl start  puppetmaster
+  543  hostname
+  544  clear
+  545  ls
+  546  more  site1.pp 
+  547  rm site1.pp 
+  548  clear
+  549  ls
+  550  cd ..
+  551  ls
+  552  vim puppet.conf
+  553  puppet apply site.pp
+  554  cd  manifests/
+  555  ls
+  556  puppet apply site.pp 
+  557  id dave
+  558  puppet resource
+  559  vim site.pp 
+  560  clear
+  561  cd /etc/ansible/
+  562  ls
+  563  pwd
+  564  ls
+  565  pwd
+  566  cd /etc/puppet/
+  567  ls
+  568  ls -ltr
+  569  cd manifests/
+  570  ls
+  571  vi site.pp 
+  572  clear
+  573  ls
+  574  clear
+  575  ls
+  576  vi site.pp 
+  577  puppet agent --fingerprint
+  578  clear
+  579  puppet resource --type
+  580  puppet resource user
+  581  puppet resource user dave
+  582  puppet resource user peshal
+  583  vi site.pp 
+  584  puppet resource user peshal
+  585  puppet resource users
+  586  puppet resource user
+  587  puppet resource user test=absent
+  588  clear
+  589  puppet resource user
+  590  puppet resource file
+  591  puppet resource file /etc
+  592  puppet resource file /etc/hosts
+  593  puppet resource package
+  594  puppet resource package kate
+  595  puppet resource package httpd
+  596  puppet resource package nginx
+  597  puppet resource package yum
+  598  puppet config print all
+  599  clear
+  600  puppet config print all
+  601  puppet config print
+  602  puppet module
+  603  puppet module install htppd
+  604  ls
+  605  cd ..
+  606  ls
+  607  cd modules/
+  608  ls
+  609  puppet module install htppd
+  610  puppet module install httpd
+  611  puppet module install http
+  612  clear
+  613  ls
+  614  clear
+  615  vi /etc/ssh/sshd_config
+  616  clear
+  617  ls
+  618  clear
+  619  ls
+  620  pwd
+  621  cp issue.net /etc/
+  622  cat /etc/issue.net 
+  623  cp issue.net /etc/
+  624  clear
+  625  vi /etc/ssh/sshd_config
+  626  systemctl restart sshd
+  627  exit
+  628  clear
+  629  cd /home/
+  630  ls
+  631  mkdir gitlab
+  632  cd gitlab/
+  633  ls
+  634  clea
+  635  clear
+  636  git remote origin github.com
+  637  git init
+  638  git remote origin github.com
+  639  clear
+  640   git remote add origin git@github.com:m71225
+  641  git push origin master
+  642  clear
+  643  ls
+  644  clear
+  645  ls
+  646  ssh-keygen -t rsa
+  647  cat /root/.ssh/id_rsa.pub
+  648  git push origin master
+  649  git clone git@github.com-user1:user1/your-repo-name.git your-repo-name_user1
+  650  git clone git@github.com:m71225/linux.git m71225
+  651  git push  git@github.com:m71225/linux.git m71225
+  652  clear
+  653  ls
+  654  ls -ltr
+  655  ls -a
+  656  git config user.name "m71225"
+  657  git config user.email "peshal@peshal.com.np"
+  658  clear
+  659  ls
+  660  ls -ltr
+  661  ls -a
+  662  more .git/config 
+  663  git clone git@github.com:m71225/linux.git m71225
+  664  git clone
+  665  cler
+  666  clear
+  667  git clone https://github.com/m71225/docs.git
+  668  ls
+  669  git clone https://github.com/m71225/nas.git
+  670  clear
+  671  ls
+  672  cd docs/
+  673  ls
+  674  touch  test(seq 1..100)
+  675  touch  test(seq 1..100 )
+  676  touch  test{seq 1..100 }
+  677  ls
+  678  rm } 
+  679  ls
+  680  rm 1..100 
+  681  clear
+  682  ls
+  683  rm test\{seq 
+  684  clear
+  685  touch test123
+  686  ls
+  687  touch testn
+  688  git add .
+  689  ls
+  690  git status
+  691  git commit -m "added some test files"
+  692  clear
+  693  ls
+  694  clear
+  695  ls
+  696  git push -m origin master
+  697  git push -u origin master
+  698  clear
+  699  clear
+  700  ls
+  701  clear
+  702  ls
+  703  clear
+  704  cd /etc/puppet/
+  705  ls
+  706  cd manifests/
+  707  ls
+  708  vi site.pp 
+  709  systemctl restart puppetmaster
+  710  clear
+  711  systemctl restart puppetmaster
+  712  vi site.pp 
+  713  clear
+  714  ls
+  715  vi site.pp 
+  716  puppet resoures
+  717  clear
+  718  puppet module resources --type
+  719  puppet  resources --type
+  720  history |grep puppet
+  721  clear
+  722  puppet resource file
+  723  puppet resources --type
+  724  puppet resource --type
+  725  puppet resource --type |grep wl
+  726  puppet resource --type |grep wc
+  727  puppet resource --type |grep wc -l
+  728  puppet resource --type  file
+  729  clear
+  730  puppet resource package
+  731  puppet resource user
+  732  puppet resource package
+  733  puppet resource cron
+  734  clear
+  735  puppet resource package
+  736  puppet resource --type
+  737  clear
+  738  puppet module list
+  739  puppet module list --tree
+  740  cd /etc/puppet/
+  741  ls
+  742  cd modules/
+  743  ls
+  744  ls -ltr
+  745  clear
+  746  puppet module search apache
+  747  puppet module search apache |grep puppetlab
+  748  puppet module install puppetlabs-apache
+  749  ls
+  750  puppet module list --tree
+  751  rpm -q httpd
+  752  clear
+  753  ls
+  754  cd ..
+  755  ls
+  756  cd manifests/
+  757  ls
+  758  more site.pp 
+  759  puppet apply site.pp 
+  760  rpm -q httpd
+  761  id david
+  762  useradd david
+  763  puppet apply site.pp 
+  764  clear
+  765  puppet config print
+  766  puppet config print hiera_config
+  767  puppet config print hiera_config |more
+  768  puppet config print hiera_config |cat
+  769  puppet config print hiera_config | xargs cat
+  770  puppet config print hiera_config | xargs more
+  771  puppet config print hiera_config | xargs {} more {}
+  772  puppet config print hiera_config 
+  773  yum install hiera
+  774  pwd
+  775  cd ..
+  776  l
+  777  ls
+  778  cd clear
+  779  ls
+  780  clear
+  781  puppet config print hiera_config 
+  782  facter 
+  783  facter  |grep uptime
+  784  facter  |grep memory
+  785  free -m
+  786  free -h
+  787  free -m
+  788  facter  |grep memory
+  789  facter  
+  790  clear
+  791  iptables -t nat  -L
+  792  cd /etc/NetworkManager/dispatcher.d/
+  793  ls
+  794  ls -1
+  795  ls -ali 
+  796  more 11-dhclient 
+  797  clear
+  798  ls
+  799  systemctl status NetworkManager
+  800  clear
+  801  ls
+  802  clear
+  803  ls
+  804  docker images
+  805  ls
+  806  systemctl start docker
+  807  docker ps -a
+  808  clear
+  809  docker rmi $(docker ps -a -q)
+  810  docker stop $(docker ps -a -q)
+  811  docker rmi $(docker ps -a -q)
+  812  clear
+  813  docker ps -a
+  814  docker swarm  leave
+  815  docker swarm  leave --force
+  816  docker ps -a
+  817  clear
+  818  ls
+  819  yum install docker-compose
+  820  clear
+  821  ls
+  822  mkdir /home/docker
+  823  cd /home/docker/
+  824  ls
+  825  clear
+  826  touch Dockerfile
+  827  vim Dockerfile 
+  828  docker built .
+  829  docker build .
+  830  docker ps -a
+  831  docker attach 1b3786c8b96f
+  832  docker  start ecstatic_banach
+  833  docker  stop ecstatic_banach
+  834  docker ps -a
+  835  ls
+  836  pwd
+  837  clear
+  838  ls
+  839  docker images
+  840  docker ps -a
+  841  docker rmi 1b3786c8b96f
+  842  docker rm 1b3786c8b96f
+  843  docker ps -a
+  844  clear
+  845  vim Dockerfile 
+  846  docker build .
+  847  docker ps -a
+  848  docker run -it -d alpine
+  849  docker run -it -d alpine bash
+  850  clear
+  851  ls
+  852  vim Dockerfile 
+  853  docker build .
+  854  docker ps -a
+  855  docker rm 3dccda169330
+  856  docker ps -a
+  857  docker  build -t web .
+  858  docker ps -a
+  859  c;ear
+  860  clear
+  861  docker run  -t ti --name=web33 alpine /bin/bash
+  862  docker run  -d ti --name=web33 alpine /bin/bash
+  863  docker run  -d -ti --name=web33 alpine /bin/bash
+  864  docker ps -a
+  865  docker stop web33
+  866  docker ps -a
+  867  docker start web33
+  868  clear
+  869  docker ps -a
+  870  docker run --name=web3 a495b8f034dc
+  871  docker run --name web33 a495b8f034dc
+  872  docker images
+  873  docker run --name web33 47cf82ae7aa3
+  874  clear
+  875  ls
+  876  pwd
+  877  ls
+  878  cat Dockerfile 
+  879  docker images
+  880  docker untag web
+  881  docker untag docker.io/alpine
+  882  docker untag alpine
+  883  docker untag 47cf82ae7aa3
+  884  clear
+  885  docker images
+  886  docker rmi  web
+  887  docker rmi  web_server
+  888  docker rmi  alpine
+  889  clear
+  890  docker images
+  891  docker rmi docker.io/alpine
+  892  docker rmi alpine
+  893  docker rmi alpine --force
+  894  clear
+  895  ls
+  896  docker ps -a
+  897  docker stop $(docker ps -a -q)
+  898  docker ps -a
+  899  docker rmi $(docker ps -a -q)
+  900  docker rm $(docker ps -a -q)
+  901  clear
+  902  docker rm $(docker ps -a -q)
+  903  docker images
+  904  docker rmi ubuntu
+  905  docker rm a35e70164dfb
+  906  docker rmi a35e70164dfb
+  907  clear
+  908  docker images
+  909  df-h
+  910  df -h
+  911  clear
+  912  ls
+  913  type test
+  914  type cp
+  915  type foo
+  916  type ls
+  917  ls
+  918  clear
+  919  info type
+  920  clear
+  921  type ls
+  922  systemctl status docker
+  923  systemctl stop docker
+  924  systemctl status docker
+  925  clear
+  926  netstat -antp
+  927  clear
+  928  yum install ansible
+  929  clear
+  930  ls
+  931  ansible
+  932  clear
+  933  ls
+  934  w
+  935  clear
+  936  ls
+  937  ps
+  938  clear
+  939  w
+  940  ls
+  941  clear
+  942  ls
+  943  ansible
+  944  ansible-galaxy
+  945  ansible-galaxy --version
+  946  ansible --version
+  947  clear
+  948  ls
+  949  ansible-playbook
+  950  ansible-playbook --list
+  951  ansible-playbook --list-host
+  952  clear
+  953  ls
+  954  hostname
+  955  systemctl status puppetserver
+  956  systemctl status puppetmaster
+  957  clear
+  958  ls
+  959  clear
+  960  ls
+  961  exit
+  962  clear
+  963  hostname
+  964  cleaar
+  965  clear
+  966  cat /etc/ansible/hosts
+  967  vi /etc/ansible/hosts
+  968  clear
+  969  ip a
+  970  clear
+  971  ansible pasa - "ls "
+  972  ansible pasa - "/usr/sbin/w "
+  973  clear
+  974  ansible pasa -a "/usr/sbin/w "
+  975  ansible pasa -b -a "/usr/sbin/w "
+  976  clear
+  977  ls
+  978  hostname
+  979  ansible -m ping pasa
+  980  ssh-keygen 
+  981  n
+  982  ssh-copy-id root@1192.168.56.11
+  983  ssh-copy-id root@1192.68.56.11
+  984  clear
+  985  ansible -m  ping pasa
+  986  ansible -m  ping 192.168.56.11
+  987  clear
+  988  ansible pasa -a "/usr/sbin/reboot"
+  989  ansible pasa -a "ls"
+  990  ssh 192.168.56.11
+  991  clear
+  992  ssh-keygen 
+  993  ssh-copy-id root@1192.168.56.11
+  994  hostname
+  995  vi /etc/ansible/hosts
+  996  ssh-copy-id root@1puppetserver
+  997  clear
+  998  ssh-copy-id puppetserver
+  999  exit
+ 1000  clear
+ 1001  pwd
+ 1002  ansible pasa - "ls"
+ 1003  clear
+ 1004  ansible pasa -a "ls"
+ 1005  ansible pasa -a "whoami"
+ 1006  ansible pasa -a "ping google.com"
+ 1007  ansible pasa -a "ping google.com -c 5"
+ 1008  clear
+ 1009  ls
+ 1010  clear
+ 1011  ansible pasa -m ping
+ 1012  ansible all -m ping
+ 1013  ansible all -a "ls -l"
+ 1014  ssh-copy-id 192.168.56.101
+ 1015  clear
+ 1016  ssh 192.168.56.101
+ 1017  vi /etc/hosts
+ 1018  clear
+ 1019  ssh client
+ 1020  vi /etc/ansible/hosts
+ 1021  ansible all -a "ls -l"
+ 1022  ansible all -a "ip a"
+ 1023  ansible all -a "df -h" 
+ 1024  ansible mike -a "df -h" 
+ 1025  ids
+ 1026  clear
+ 1027  useradd don
+ 1028  passwd don
+ 1029  clear
+ 1030  ls
+ 1031  clear
+ 1032  ls
+ 1033  ll
+ 1034  clear
+ 1035  su - don
+ 1036  ansible mike -a "df -h" 
+ 1037  clear
+ 1038  ansible all -m  yum  -a "name=elinks state=latest"
+ 1039  rpm -q elinks
+ 1040  ansible all -m  yum  -a "name=elinks state=latest"
+ 1041  ansible all -m  yum  -a "name=http state=latest"
+ 1042  ansible all -m  yum  -a "name=httpd state=latest"
+ 1043  ansible all -m  yum  -a "name=httpd state=absent"
+ 1044  ansible all -m  yum  -a "name=elinks state=absent"
+ 1045  vi /etc/hosts
+ 1046  ping centos69
+ 1047  ssh-copy-id  root@centos69
+ 1048  ssh entos69
+ 1049  ssh centos69
+ 1050  ansible all -a "df -h" 
+ 1051  vi /etc/ansible/hosts
+ 1052  ansible all -a "df -h" 
+ 1053  vi /etc/ansible/hosts
+ 1054  ansible all -a "df -h" 
+ 1055  cat /etc/hosts
+ 1056  vim  /etc/hosts
+ 1057  ping centos69
+ 1058  clear
+ 1059  ls
+ 1060  ansible all -a "df -h" 
+ 1061  ssh centos69
+ 1062  clear
+ 1063  vi /etc/ansible/hosts
+ 1064  ansible all -a "df -h" 
+ 1065  vi /etc/ansible/hosts
+ 1066  ansible all -a "df -h" 
+ 1067  vi /etc/ansible/hosts
+ 1068  ansible all -a "df -h" 
+ 1069  ansible all -a "uname -r" 
+ 1070  ansible all -a "iptables -nvL" 
+ 1071  ansible all -a "iptables -F" 
+ 1072  ansible all -a "iptables -nvL" 
+ 1073  ansible all -a "iptables -t nat -L " 
+ 1074  ansible all -a "hostnMW" 
+ 1075  ansible all -a "hostname" 
+ 1076  ansible all -a "getenforce" 
+ 1077  ansible all -a "setenforce 0" 
+ 1078  ansible all -a "hostname" 
+ 1079  ansible all -a "df -h" 
+ 1080  ansible all -a "getenforce" 
+ 1081  ansible all -a "setenforce 0" 
+ 1082  ansible all -a "getenforce" 
+ 1083  getenforce 
+ 1084  clear
+ 1085  hostname
+ 1086  ip a
+ 1087  clear
+ 1088  ansible all -a "getenforce" 
+ 1089  ansible all -a "iptables -nvL" 
+ 1090  ansible all -a "iptables -F" 
+ 1091  ansible all -a "iptables -nvL" 
+ 1092  ansible all -m  yum  -a "name=elinks state=latest"
+ 1093  ansible all -a "hostname" 
+ 1094  ansible mike -a "hostname" 
+ 1095  clear
+ 1096  ls
+ 1097  pwd
+ 1098  cd /etc/ansible/
+ 1099  ls
+ 1100  cat hosts
+ 1101  ls
+ 1102  vi ping.yaml
+ 1103  ansible-playbook ping.yaml
+ 1104  clear
+ 1105  ansible centos6 --list-hosts
+ 1106  ansible all --list-hosts
+ 1107  cat  ping.yaml
+ 1108  ansible all --list-hosts
+ 1109  vim myhosts
+ 1110  ansible hosts -i myhosts -m ping 
+ 1111  ansible hosts -i myhosts -a "df -h"
+ 1112  ansible hosts -i myhosts -a "uname -r"
+ 1113  clear
+ 1114  ansible hosts -i myhosts -m  setuo -a 'filter=ansible_default_ipv4'
+ 1115  ansible hosts -i myhosts -m  setup -a 'filter=ansible_default_ipv4'
+ 1116  ansible hosts -i myhosts -m  setup -a 'filter=address'
+ 1117  ansible hosts -i myhosts -m  setup -a 'filter=ansible_default_ipv4'
+ 1118  clear
+ 1119  ansible hosts -i myhosts -a "ls -l {{folder}}"
+ 1120  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1121  ansible hosts -i myhosts -a "ls -l {{ uname }}"
+ 1122  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1123  clear
+ 1124  ls
+ 1125  vi myhosts 
+ 1126  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1127  vi myhosts 
+ 1128  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1129  clear
+ 1130  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1131  vi myhosts 
+ 1132  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1133  vi myhosts 
+ 1134  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1135  ansible hosts -i myhosts -a "ls -l {{folder}}"
+ 1136  vi myhosts 
+ 1137  ansible hosts -i myhosts -a "ls -l {{folder}}"
+ 1138  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1139  clear
+ 1140  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1141  ping client
+ 1142  clear
+ 1143  ansible hosts -i myhosts -a "ls -l {{ folder }}"
+ 1144  cat myhosts 
+ 1145  ansible all -a “ls -l” -f 100 
+ 1146  ansible all -a “ls -l” -f 2
+ 1147  ansible all -a “ls -l” 
+ 1148  ansible all -a “ls -l” -f 6
+ 1149  clear
+ 1150  ansible pasa -a “ls -l” -f 6
+ 1151  ansible pasa -a “ls -l” 
+ 1152  ls
+ 1153  clear
+ 1154  ls
+ 1155  rm myhosts
+ 1156  clear
+ 1157  ls
+ 1158  ansible pasa -a “ls -l” 
+ 1159  ansible pasa -a 'ls -l'
+ 1160  ansible pasa -a 'ls -l' -f 2
+ 1161  ansible all -a 'ls -l' -f 2
+ 1162  ansible all -a 'ls -l' -f 0
+ 1163  ansible all -a 'ls -l' -f 1
+ 1164  ansible all -a 'ls -l' -f 2
+ 1165  ansible all -a 'ls -l' -f 100
+ 1166  ansible all -a 'ls -l' -f 1000000000
+ 1167  ansible all -a 'ls -l' -f 0
+ 1168  ansible all -a 'ls -l' -f 100
+ 1169  clear
+ 1170  ls
+ 1171  ansible all -m copy -a "src=/etc/ansible/ping.yaml dest = ./ping.yml"
+ 1172  ansible all -m copy -a "src=/etc/ansible/ping.yaml dest = .ping.yml"
+ 1173  ansible all -m copy -a "src=/etc/ansible/ping.yaml dest= .ping.yml"
+ 1174  ansible all -m copy -a "src=/etc/ansible/ping.yaml dest= /root/ping.yml"
+ 1175  ansible all -m copy -a 'src=/etc/ansible/ping.yaml dest= /root/ping.yml'
+ 1176  ansible all -m copy -a 'src=/etc/ansible/ping.yaml dest=/root/ping.yml'
+ 1177  ansible all -a "ls -l /"
+ 1178  ansible all -a "ls -l /root/"
+ 1179  ansible all -m copy -a 'src=/etc/ansible/ping.yaml dest=/root/ping.yml' --become-user ansible
+ 1180  ansible all -a "ls -l /root/"
+ 1181  ansible all -m copy -a 'src=/etc/ansible/ping.yaml dest=/root/oracle.yml' --become-user ansible
+ 1182  ansible all -a "ls -l /root/"
+ 1183  ansible all -a "chown ansible:ansbile /root/"
+ 1184  ansible all -a "useradd ansible"
+ 1185  ansible all -a "ls -l /root/"
+ 1186  ansible all -a "ls -l /root/oracle.yml"
+ 1187  ansible all -a "chown ansible:ansible /root/oracle.yml"
+ 1188  ansible all -a 'chown ansible:ansible /root/oracle.yml'
+ 1189  ansible all -a 'chgrp ansible:ansible /root/oracle.yml'
+ 1190  ansible all -a "ls -l /root/oracle.yml"
+ 1191  ansible all -m copy -a 'src=/etc/ansible/ping.yaml dest=/root/oracle.yml' --become-user root
+ 1192  ansible all -a "ls -l /root/oracle.yml"
+ 1193  ansible all -m copy -a 'src=/etc/ansible/ping.yaml dest=/root/oracle.yml' --become-user=don
+ 1194  ansible all -a "ls -l /root/oracle.yml"
+ 1195  ansible all -a "rm /root/oracle.yml"
+ 1196  ansible all -a "rm  /root/oracle.yml"
+ 1197  ansible all -a "ls -l /root/oracle.yml"
+ 1198  ansible all -m copy -a 'src=/etc/ansible/ping.yaml dest=/root/oracle.yml' --become-user=don
+ 1199  ansible all -a "ls -l /root/oracle.yml"
+ 1200  ansible all -m copy -a 'src=/etc/ansible/ping.yaml dest=/root/oracle.yml' --become-user=don
+ 1201  clear
+ 1202  ls
+ 1203  touch test1
+ 1204  clear
+ 1205  ansible pasa -m  file -a ""dest=/etc/ansible/test1 mode=600"
+q
+exit
+"
+ 1206  ansible pasa -m  file -a "dest=/etc/ansible/test1 mode=600"
+ 1207  ls -ltr
+ 1208  ansible pasa -m  file -a "dest=/etc/ansible/test1 mode=666"
+ 1209  ls -ltr
+ 1210  cat /etc/hosts
+ 1211  cler
+ 1212  clear
+ 1213  cat /etc/hosts
+ 1214  $ ansible pasa -m shell -a 'echo $TERM'
+ 1215   ansible pasa -m shell -a 'echo $TERM'
+ 1216   ansible pasa -m shell -a 'echo $USER
+ 1217   ansible pasa -m shell -a 'echo $USER'
+ 1218   ansible pasa -m shell -a 'echo $PWD'
+ 1219   ansible all -m shell -a 'echo $PWD'
+ 1220  ansible pasa -m shell -a 'echo $PWD'
+ 1221  ansible pasa -m shell -a 'type'
+ 1222  ansible pasa -m shell -a 'type ls'
+ 1223  ansible pasa -m shell -a 'type pwd'
+ 1224  ansible pasa -m shell -a 'type /etc/motd'
+ 1225  clear
+ 1226   ansible all -B 3600 -P 0 -a "/usr/bin/long_running_operation --do-stuff"
+ 1227   ansible all -B 3600 -P 60 -a "/usr/bin/long_running_operation --do-stuff"
+ 1228  ansible all -m setup
+ 1229  ansible ungroup -m shell -a 'type /etc/motd'
+ 1230  ansible ungroup -m  ping
+ 1231  vi /etc/ansible/hosts
+ 1232  ansible ungroup -m  ping
+ 1233  ansible ungrouped -m  ping
+ 1234  history 
+ 1235  pwd
+ 1236  cd
+ 1237  history 
+ 1238  history >history-ansible.txt
